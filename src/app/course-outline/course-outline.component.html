@@ -1,0 +1,25 @@
+<!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <div class="container">
+        <div class="course-info">
+            
+            <img src="{{course.img_url}}" alt="Course Image"> 
+            <h1>{{course.title}}</h1>
+            <ul>
+                <li><strong>Overview:==></strong><i>{{course.description}}</i></li>
+                <li><strong>Duration:==></strong><i>{{course.duration}}</i></li>
+                <li><strong>Fee:==></strong><i>{{course.fee}}</i></li>
+            </ul>
+            
+        </div>
+       
+            <div class="course-outline">
+                <h2><strong>Course Outline</strong></h2>
+                <p class="list-group-item">{{course.course_outline}}</p>
+            </div>
+            <a href="#" class="course-outlin__back">
+                <button class="btn btn-primary"><i class="emoji-left">👈</i>Back</button>
+            </a>
+        
+    </div>
+
