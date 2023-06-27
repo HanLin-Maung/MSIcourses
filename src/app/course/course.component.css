@@ -1,6 +1,7 @@
 .container {
-  color: rgb(33, 38, 38);
-  background-color: bisque;
+  color: #1303f7;
+  text-shadow: 0 2px 5px rgb(250, 246, 246);
+  background-color: rgb(188, 188, 245);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -9,50 +10,60 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100%; 
   
 }
 
 .row{
   background-color: rgb(188, 188, 245);
+  margin: auto;
+ 
 }
 
 .card {
     background-color: rgb(179, 235, 240);
     width: 300px;
-    border: 5px solid rgb(115, 139, 10);
-    border-radius: 50px;
+    border: 3px solid rgb(115, 139, 10);
+    border-radius: 20px;
     padding: 20px;
-    margin: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    
+    margin-top: 45px;
+    margin-left: 30px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px hwb(180 27% 73%);
+    display: inline-block;
   }
 
   .card img {
+    border-radius: 20px;
     width: 100%;
     height: auto;
   }
 
   .card .title {
-    font-size: 18px;
+    text-shadow: 0 3px 6px white;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
   }
 
   .card .description {
+    text-shadow: 0 3px 6px white;
     margin-top: 10px;
   }
 
   .card .details {
+    text-shadow: 0 4px 8px white;
     margin-top: 10px;
   }
 
   .card .duration {
+    text-shadow: 0 4px 8px white;
     font-weight: bold;
   }
 
   .card .fee {
+    text-shadow: 0 4px 8px white;
     color: green;
     font-weight: bold;
   }
