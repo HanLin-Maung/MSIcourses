@@ -1,3 +1,22 @@
 <div *ngFor="let item of myNumberArray">
     No. {{item}}
+</div> 
+<!-- <input type="text" [(ngModel)]="username = $event">
+<br>
+<input type="password" [(ngModel)]="password = $event">
+
+<button (click)="onButtonClick()">Click Me!</button>  -->
+
+<h2>Login</h2>
+
+<div>
+  <label for="username">Username:</label>
+  <input type="text" id="username" [(ngModel)]="username" placeholder="Type hanlinmaung">
 </div>
+
+<div>
+  <label for="password">Password:</label>
+  <input type="password" id="password" [(ngModel)]="password" placeholder="Enter with 123456 ">
+</div>
+
+<button (click)="onButtonClick()">Login</button>

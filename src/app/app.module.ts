@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CourseComponent } from './course/course.component';
 import { CourseOutlineComponent } from './course-outline/course-outline.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,16 @@ import { CourseOutlineComponent } from './course-outline/course-outline.componen
     CourseComponent,
     CourseOutlineComponent,
     
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    FormsModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

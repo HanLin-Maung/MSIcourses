@@ -1,6 +1,6 @@
 .container {
   color: #1303f7;
-  text-shadow: 0 2px 5px rgb(250, 246, 246);
+  text-shadow: 0 2px 5px rgb(244, 248, 4);
   background-color: rgb(188, 188, 245);
   justify-content: center;
   align-items: center;
@@ -10,14 +10,29 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 100%; 
-  
+}
+
+.navbar{
+  color: aqua;
+  background-color: #d0d5e2;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 30px; 
+}
+
+.nav a:hover{
+  color: #c3e585;
+}
+.dark-mode {
+  background-color: #222;
+  color: rgb(188, 188, 245);
 }
 
 .row{
-  background-color: rgb(188, 188, 245);
+  /* display: flex;
+  justify-content: center; */
   margin: auto;
- 
 }
 
 .card {
@@ -59,6 +74,7 @@
 
   .card .duration {
     text-shadow: 0 4px 8px white;
+    color:rgb(107, 108, 3);
     font-weight: bold;
   }
 

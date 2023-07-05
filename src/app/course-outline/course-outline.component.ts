@@ -14,6 +14,13 @@ export class CourseOutlineComponent implements OnInit {
     private activatedRoute: ActivatedRoute
   ){}
 
+
+  darkModeEnabled = false;
+
+  myfun(event: any): void {
+    this.darkModeEnabled = event.checked;
+  }
+
   courseId: any;
   course: any;
   courses = this.heroService.courses

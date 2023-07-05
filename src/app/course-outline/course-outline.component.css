@@ -1,10 +1,17 @@
-.container {
-    width: 100%;
+.container-fluid {
+    width: auto;
     height: auto;
+    max-width: 100%;
     margin: auto;
     padding: auto; 
     background-color: rgb(170, 226, 245);
+    
 }
+
+.dark-mode {
+    background-color: #222;
+    color: rgb(188, 188, 245);
+  }
 
 .course-info img {
     width: 400px;
@@ -16,6 +23,7 @@
 
 .course-info h1 {
     text-align: center;
+    text-shadow: 0 3px 6px white;
     font-size: 40px;
     color: rgb(2, 23, 245);
     margin-top: 10px;
@@ -33,6 +41,7 @@
 
 .course-outline h2 {
     font-size: 30px;
+    text-shadow: 0 3px 6px white;
     margin-top: 20px;
     margin-bottom: 10px;
     color: rgb(168, 16, 16);
@@ -46,5 +55,6 @@
     padding: 10px;
     text-align: center;
     vertical-align: middle;
+    /* display: block; */
       
 }

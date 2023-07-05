@@ -1,4 +1,9 @@
-<div class="container">
+<mat-slide-toggle (change)="myfun($event)">Dark Mode</mat-slide-toggle>
+
+<div class="container-fluid" [ngClass]="{'dark-mode': darkModeEnabled}">
+    <a href="#" class="course-outlin__back">
+        <button class="btn btn-primary"><i class="emoji-left">👈</i> Back</button>
+    </a>
     <div class="course-info">
         <img src="{{course.img_url}}" alt="Course Image">
         <h1>{{course.title}}</h1>
@@ -12,8 +17,5 @@
         <h2><strong>Course Outline</strong></h2>
         <p class="list-group-item">{{course.course_outline}}</p>
     </div>
-    <a href="#" class="course-outlin__back">
-        <button class="btn btn-primary"><i class="emoji-left">👈</i>Back</button>
-    </a>
 </div>
 

@@ -1,18 +1,46 @@
- <div class="container">
-    <h1>MSI Courses</h1>
-</div>
-<div class="row">
+<body>
+    <nav class="navbar navbar-expand-lg text-uppercase fixed-top">
+        <img src="../assets/images/msilogo.png" rel="logo" width="50px">
+        <mat-slide-toggle (change)="myfun($event)">Dark Mode</mat-slide-toggle>
+
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-black text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item  mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded">Home</a></li>
+               <li class="nav-item  mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded">Courses</a></li>
+               <li class="nav-item  mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded">About</a></li>
+           </ul>
+       </div>
+    </nav>
+  
+    <br>
+    <br>
+    <br>
     
-    <div class="card g-col-4 g-col-md-3 g-col-sm-1" *ngFor="let course of courses">
-        <img src="{{course.img_url}}" alt="Course Image"> 
-        <div class="title">{{course.title}}</div>
-        <div class="description">{{course.description}}</div>
-        <div class="details">
-            <div class="duration">{{course.duration}}</div>
-            <div class="fee">{{course.fee}}</div>
-            <a class="card__link" routerLink="/course-outline/{{course.id}}">
-                <button class="btn btn-primary">Details <i class="emoji-right">👉</i></button>
-            </a>
+    
+    <div class="container" [ngClass]="{'dark-mode': darkModeEnabled}">
+
+        <h1>MANDALAY SOFTWARE INSTITUDE</h1>
+        <P>We Can Boost Your Software Institude</P>
+        <img src="../assets/images/msicover.png" alt="cover image" width="500px" height="ms-auto">
+        <h1>MSI Courses</h1>
+        <div class="row d-flex flex-row mb-3">
+            <div class="card g-col-4 g-col-md-3 g-col-sm-1" *ngFor="let course of courses">
+                <img src="{{course.img_url}}" alt="Course Image">
+                <div class="title">{{course.title}}</div>
+                <div class="description">{{course.description}}</div>
+                <div class="details">
+                    <div class="duration">{{course.duration}}</div>
+                    <div class="fee">{{course.fee}}</div>
+                    <a class="card__link" routerLink="/course-outline/{{course.id}}">
+                        <button class="btn btn-primary">Details <i class="emoji-right">👉</i></button>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div> 
-</div>
+    </div>
+</body>

@@ -13,6 +13,13 @@ export class CourseComponent implements OnInit {
     
   ) { }
 
+  darkModeEnabled: boolean = false;
+
+  myfun(event: any): void {
+    this.darkModeEnabled = event.checked;
+    console.log(event.checked)
+  }
+
   
   courses = this.heroService.courses
 
@@ -21,5 +28,4 @@ export class CourseComponent implements OnInit {
    
     
   }
-
 }
